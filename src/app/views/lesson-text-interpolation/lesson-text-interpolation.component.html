@@ -1,0 +1,34 @@
+<div class="container my-5">
+  <h1 class="text-primary">{{ title }}</h1>
+  <p>{{ description }}</p>
+
+  <!-- Exemple de text interpolation -->
+  <div class="alert alert-info">
+    <p>Exemple d'interpolation de texte :</p>
+    <code>&lt;p&gt;Bonjour, {{ username }}!&lt;/p&gt;</code>
+  </div>
+
+  <h2 class="mt-4">Résultat en temps réel :</h2>
+  <p>Bonjour, {{ username }}!</p>
+
+  <!-- Exemples additionnels -->
+  <div class="mt-4">
+    <h3>Quelques autres exemples :</h3>
+    <ul>
+      <li>Utilisateur par défaut : <strong>{{ username }}</strong></li>
+      <li>Calcul direct (10 + 20) : <strong>{{ 10 + 20 }}</strong></li>
+      <li>Condition ternaire : <strong>{{ username === 'Nicolas' ? 'Utilisateur générique' : 'Utilisateur spécifique' }}</strong></li>
+      <li>Accès à un tableau : <strong>{{ items[0] }}</strong></li>
+      <li>Appel d'une méthode : <strong>{{ getWelcomeMessage() }}</strong></li>
+    </ul>
+  </div>
+
+  <!-- Bloc explicatif sur les bonnes pratiques -->
+  <div class="alert alert-warning mt-4">
+    <h4>Bonnes pratiques :</h4>
+    <ul>
+      <li>Ne pas surcharger l'interpolation avec des calculs complexes.</li>
+      <li>Préparer les données dans la classe TypeScript pour garder un template lisible.</li>
+    </ul>
+  </div>
+</div>

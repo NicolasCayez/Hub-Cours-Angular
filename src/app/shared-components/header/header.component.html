@@ -1,0 +1,115 @@
+<nav class="bg-dark text-white text-center py-3 container-100 row">
+  <img src="favicon.ico" alt="Logo" class="logo_angular col">
+  <h1 class="col-3">Angular</h1>
+  <!-- lien RouterLink -->
+  <a routerLink="/home" class="navbar-brand col me-2 my-auto">Home</a>
+  <a routerLink="/lesson-text" class="navbar-brand col me-2 my-auto">Lesson-Text-Interpolation</a>
+  <a routerLink="/list-friends" class="navbar-brand col me-2 my-auto">List Friends</a>
+  <!-- Liens classiques -->
+  <a href="http://www.google.fr" class="navbar-brand col me-2 my-auto">Google</a>
+  <a href="http://www.angular.dev" class="navbar-brand col me-2 my-auto">Angular</a>
+
+</nav>
+
+<!-- navbar JEFF -->
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="favicon.ico" alt="Logo" style="width: 30px; height: 30px; margin-right: 5px;">
+
+      Angular</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lessons
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
+            <li><a class="dropdown-item" routerLink="/app-lesson-text-interpolation">Text Interpolation</a></li>
+            <li><a class="dropdown-item" href="#">Binding</a></li>
+            <li><a class="dropdown-item" href="#">Directives</a></li>
+            <li><a class="dropdown-item" routerLink="/app-parent">Component Communication</a></li>
+            <li><a class="dropdown-item" href="#">Services / Dependency Injection</a></li>
+            <li><a class="dropdown-item" routerLink="/app-lesson-routing">Routing</a></li>
+            <li><a class="dropdown-item" routerLink="/app-lesson-pipes">Pipes</a></li>
+            <li><a class="dropdown-item" routerLink="/app-life-cycle-hooks">LifeCycle Hooks</a></li>
+            <li><a class="dropdown-item" routerLink="/app-http-exemple">HTTP</a></li>
+            <li><a class="dropdown-item" routerLink="/app-chart-exemple">ChartJS</a></li>
+            <li><a class="dropdown-item" routerLink="/app-observables">Observables</a></li>
+            <li><a class="dropdown-item" routerLink="/app-signals">Signals</a></li>
+            <li><a class="dropdown-item" routerLink="/app-lesson-firebase">Angular & Firebase BAAS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exo
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends">Text Interpolation</a></li>
+            <li><a class="dropdown-item" href="#">Routing</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-property-binding">Property Binding [property]</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-event-binding">Event Binding (event)</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-ngmodel">2 Ways Binding [(ngModel)]</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-conditional-rendering">Directive structurelle ngIf : Conditional Rendering</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-list-rendering">Directive structurelle ngFor : List Rendering</a></li>
+            <li><a class="dropdown-item" routerLink="/app-list-friends-list-rendering">Directive Attribute ngStyle & ngClass : Dynamic Styling</a></li>
+            <li><a class="dropdown-item" routerLink="/app-blog-control-center">Component Communication</a></li>
+            <li><a class="dropdown-item" routerLink="/app-profiles-manager">Services / Dependency Injection</a></li>
+            <li><a class="dropdown-item" routerLink="/app-pokemon-list">Pokemon Api (Service)</a></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-pipes">Pipes</a></li>
+            <li><a class="dropdown-item" href="#">HTTP</a></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-observables">Observables</a></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-observables-simple">Observables easy</a></li>
+            <li><a class="dropdown-item" href="#">Signals</a></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-tasks-firebase">Firebase BAAS</a></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-tasks-firebase-crud">Firebase CRUD BAAS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            TP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/app-component-manip">Tp 1 - Manip Composants</a></li>
+            <li><a class="dropdown-item" routerLink="/app-tp-binding">Tp 2 - Système Binding</a></li>
+            <li><a class="dropdown-item" routerLink="/app-tp-directives">Tp 3 - Système Directives</a></li>
+            <li><a class="dropdown-item" routerLink="/app-comp-comm">Tp-4 Commponent Communication</a></li>
+            <li><a class="dropdown-item" routerLink="/app-tp-signals">Tp-5 Signals</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Admin
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/app-register">Inscription</a></li>
+            <li><a class="dropdown-item" routerLink="/app-login">Connexion</a></li>
+            <li><a class="dropdown-item" routerLink="/app-dashboard">Dashboard</a></li>
+            <li><a class="dropdown-item" routerLink="/app-profile-user">Mon Profil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li *ngIf="currentUser">
+              <a class="dropdown-item" (click)="logOut()">Déconnexion</a>
+            </li>
+            <li *ngIf="!currentUser">
+              <a class="dropdown-item" routerLink="/app-login">Connexion</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
