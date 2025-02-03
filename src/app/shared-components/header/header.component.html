@@ -1,20 +1,20 @@
-<nav class="bg-dark text-white text-center py-3 container-100 row ps-5">
+<!-- <nav class="bg-dark text-white text-center py-3 container-100 row">
   <img src="favicon.ico" alt="Logo" class="logo_angular col">
-  <h1 class="col-3">Angular</h1>
+  <h1 class="col-3">Angular</h1> -->
   <!-- lien RouterLink -->
-  <a routerLink="/home" class="navbar-brand col me-2 my-auto">Home</a>
+  <!-- <a routerLink="/home" class="navbar-brand col me-2 my-auto">Home</a>
   <a routerLink="/lesson-text" class="navbar-brand col me-2 my-auto">Lesson-Text-Interpolation</a>
-  <a routerLink="/list-friends" class="navbar-brand col me-2 my-auto">List Friends</a>
+  <a routerLink="/list-friends" class="navbar-brand col me-2 my-auto">List Friends</a> -->
   <!-- Liens classiques -->
-  <a href="http://www.google.fr" class="navbar-brand col me-2 my-auto">Google</a>
+  <!-- <a href="http://www.google.fr" class="navbar-brand col me-2 my-auto">Google</a>
   <a href="http://www.angular.dev" class="navbar-brand col me-2 my-auto">Angular</a>
 
-</nav>
+</nav> -->
 
 <!-- navbar JEFF -->
-<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/home">
+    <a class="navbar-brand text-white" routerLink="/home">
       <img src="favicon.ico" alt="Logo" style="width: 30px; height: 30px; margin-right: 5px;">
 
       Angular</a>
@@ -24,14 +24,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+          <a class="nav-link active text-white ms-5" aria-current="page" routerLink="/home">Accueil</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Lessons
+          <a class="nav-link dropdown-toggle text-white ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Leçons
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
+            <li><a class="dropdown-item" routerLink="/lesson-text">Text-Interpolation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <!-- <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
             <li><a class="dropdown-item" routerLink="/app-lesson-text-interpolation">Text Interpolation</a></li>
             <li><a class="dropdown-item" href="#">Binding</a></li>
             <li><a class="dropdown-item" href="#">Directives</a></li>
@@ -44,17 +46,19 @@
             <li><a class="dropdown-item" routerLink="/app-chart-exemple">ChartJS</a></li>
             <li><a class="dropdown-item" routerLink="/app-observables">Observables</a></li>
             <li><a class="dropdown-item" routerLink="/app-signals">Signals</a></li>
-            <li><a class="dropdown-item" routerLink="/app-lesson-firebase">Angular & Firebase BAAS</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/app-lesson-firebase">Angular & Firebase BAAS</a></li> -->
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Exo
+          <a class="nav-link dropdown-toggle text-white ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exercices
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
+            <li><a class="dropdown-item" routerLink="/list-friends">List Friends Text Interpolation</a></li>
+            <li><a class="dropdown-item" routerLink="/list-friends-property-binding">List Friends (Property Binding))</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <!-- <li><a class="dropdown-item" routerLink="/app-lesson-component">Components</a></li>
             <li><a class="dropdown-item" routerLink="/app-list-friends">Text Interpolation</a></li>
             <li><a class="dropdown-item" href="#">Routing</a></li>
             <li><a class="dropdown-item" routerLink="/app-list-friends-property-binding">Property Binding [property]</a></li>
@@ -72,26 +76,25 @@
             <li><a class="dropdown-item" routerLink="/app-exo-observables-simple">Observables easy</a></li>
             <li><a class="dropdown-item" href="#">Signals</a></li>
             <li><a class="dropdown-item" routerLink="/app-exo-tasks-firebase">Firebase BAAS</a></li>
-            <li><a class="dropdown-item" routerLink="/app-exo-tasks-firebase-crud">Firebase CRUD BAAS</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/app-exo-tasks-firebase-crud">Firebase CRUD BAAS</a></li> -->
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             TP
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/app-component-manip">Tp 1 - Manip Composants</a></li>
+            <!-- <li><a class="dropdown-item" routerLink="/app-component-manip">Tp 1 - Manip Composants</a></li>
             <li><a class="dropdown-item" routerLink="/app-tp-binding">Tp 2 - Système Binding</a></li>
             <li><a class="dropdown-item" routerLink="/app-tp-directives">Tp 3 - Système Directives</a></li>
             <li><a class="dropdown-item" routerLink="/app-comp-comm">Tp-4 Commponent Communication</a></li>
-            <li><a class="dropdown-item" routerLink="/app-tp-signals">Tp-5 Signals</a></li>
+            <li><a class="dropdown-item" routerLink="/app-tp-signals">Tp-5 Signals</a></li> -->
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Admin
           </a>
@@ -108,8 +111,9 @@
               <a class="dropdown-item" routerLink="/app-login">Connexion</a>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
+      <a href="http://www.angular.dev" class="nav-link text-white ms-auto">www.angular.dev</a>
     </div>
   </div>
-</nav> -->
+</nav>

@@ -13,6 +13,7 @@ export class OneFriendComponent {
   oneFriendStatus: string = 'Online';
   oneFriendBio: string = 'Champion du monde de Beach-Curling';
   oneFriendXss: string = "<script>alert('Hello, XSS')</script>";
+  oneFriendImg:string = 'https://picsum.photos/id/237/200/300';
   getOneFriendStatus (): string {
     return `${this.oneFriendStatus}`;
   }
