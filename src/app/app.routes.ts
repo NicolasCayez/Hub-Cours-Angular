@@ -3,6 +3,7 @@ import { HomeComponent } from './views/home/home.component';
 import { LessonTextInterpolationComponent } from './views/lesson-text-interpolation/lesson-text-interpolation.component';
 import { ListFriendsComponent } from './views/list-friends/list-friends.component';
 import { ListFriendsPropertyBindingComponent } from './views/list-friends-property-binding/list-friends-property-binding.component';
+import { ListFriendsEventBindingComponent } from './views/list-friends-event-binding/list-friends-event-binding.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -10,6 +11,7 @@ export const routes: Routes = [
   { path: 'lesson-text', component: LessonTextInterpolationComponent},
   { path: 'list-friends', component: ListFriendsComponent},
   { path: 'list-friends-property-binding', component: ListFriendsPropertyBindingComponent},
+  { path: 'list-friends-event-binding', component: ListFriendsEventBindingComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},
