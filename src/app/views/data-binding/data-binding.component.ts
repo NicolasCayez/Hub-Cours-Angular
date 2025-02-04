@@ -8,16 +8,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './data-binding.component.css'
 })
 export class DataBindingComponent {
-  userName: string = "test";
+  userName: string = "";
   emptyUserName: boolean = true;
-
-  constructor(){
-    this.userName = "";
-  }
-  
 
   resetInput():void {
     this.userName = "";
+    this.emptyUserName = true
   }
 
   onUpdate(eventInput:Event): void {
