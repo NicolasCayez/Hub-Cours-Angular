@@ -6,6 +6,7 @@ import { ListFriendsPropertyBindingComponent } from './views/list-friends-proper
 import { ListFriendsEventBindingComponent } from './views/list-friends-event-binding/list-friends-event-binding.component';
 import { ListFriendsNgmodelComponent } from './views/list-friends-ngmodel/list-friends-ngmodel.component';
 import { DataBindingComponent } from './views/data-binding/data-binding.component';
+import { DirectiveNgifComponent } from './views/directive-ngif/directive-ngif.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -17,6 +18,8 @@ export const routes: Routes = [
   { path: 'list-friends-event-binding', component: ListFriendsEventBindingComponent},
   { path: 'list-friends-ngmodel', component: ListFriendsNgmodelComponent},
   { path: 'data-binding', component: DataBindingComponent},
+  { path: 'directive-ngif', component: DirectiveNgifComponent},
+  { path: 'directive-ngstyle', component: DirectiveNgstyleComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},

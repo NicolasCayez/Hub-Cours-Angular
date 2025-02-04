@@ -16,7 +16,4 @@ export class DataBindingComponent {
     this.emptyUserName = true
   }
 
-  onUpdate(eventInput:Event): void {
-    this.userName == "" ? this.emptyUserName = true : this.emptyUserName = false;
-  }
 }
