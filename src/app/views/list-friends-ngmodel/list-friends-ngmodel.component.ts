@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { OneFriendComponent } from '../one-friend/one-friend.component';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
-  selector: 'app-list-friends-event-binding',
-  imports: [OneFriendComponent],
-  templateUrl: './list-friends-event-binding.component.html',
-  styleUrl: './list-friends-event-binding.component.css'
+  selector: 'app-list-friends-ngmodel',
+  imports: [FormsModule, OneFriendComponent],
+  templateUrl: './list-friends-ngmodel.component.html',
+  styleUrl: './list-friends-ngmodel.component.css'
 })
-export class ListFriendsEventBindingComponent {
+export class ListFriendsNgmodelComponent {
   listFriendsAuth: boolean = false;
   listFriendsCreationStatus: string = "";
-  listFriendsTextInput: string = "";
+  listFriendsTextInput: string = "Hello";
 
   constructor(){
     setTimeout(()=>{this.listFriendsAuth = true},3000);
@@ -19,6 +21,6 @@ export class ListFriendsEventBindingComponent {
   onAddingFriends(): void {this.listFriendsCreationStatus = "votre ami a été ajouté";}
   onUpdateFriendsList(eventInput:Event): void {
     console.log(eventInput);
-    this.listFriendsTextInput = (<HTMLInputElement>eventInput.target).value;
+    // this.listFriendsTextInput = (<HTMLInputElement>eventInput.target).value;
   }
 }
