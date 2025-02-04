@@ -8,6 +8,7 @@ import { ListFriendsNgmodelComponent } from './views/list-friends-ngmodel/list-f
 import { DataBindingComponent } from './views/data-binding/data-binding.component';
 import { DirectiveNgifComponent } from './views/directive-ngif/directive-ngif.component';
 import { DirectiveNgforComponent } from './views/directive-ngfor/directive-ngfor.component';
+import { ParentComponent } from './views/parent/parent.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: 'data-binding', component: DataBindingComponent},
   { path: 'directive-ngif', component: DirectiveNgifComponent},
   { path: 'directive-ngfor', component: DirectiveNgforComponent},
+  { path: 'parent', component: ParentComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},
