@@ -1,9 +1,9 @@
-import { NgStyle } from '@angular/common';
+import { NgClass, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-one-friend',
-  imports: [NgStyle],
+  imports: [NgStyle, NgClass],
   templateUrl: './one-friend.component.html',
   styleUrl: './one-friend.component.css'
 })
@@ -15,10 +15,12 @@ export class OneFriendComponent {
   oneFriendBio: string = 'Champion du monde de Beach-Curling';
   oneFriendXss: string = "<script>alert('Hello, XSS')</script>";
   oneFriendImg: string = 'https://picsum.photos/id/237/200/300';
-  unAmiStatus: string = "";
+  oneFrienStyle: string = "";
+  
 
   constructor(){
-    Math.random() > 0.5 ? this.unAmiStatus = "ON" : this.unAmiStatus = "OFF" ;
+    // Math.random() > 0.5 ? this.unAmiStatus = "ON" : this.unAmiStatus = "OFF" ;
+    this.oneFrienStyle = Math.random() > 0.5 ? "ON" : "OFF" ;
   }
 
   getOneFriendStatus (): string {
@@ -26,10 +28,6 @@ export class OneFriendComponent {
   }
 
   getColor(): string{
-    if (this.unAmiStatus == "ON"){
-      return "green";
-    }else {
-      return "red";
-    }
+    return this.oneFrienStyle === "ON" ? 'green' : 'red';
   }
 }

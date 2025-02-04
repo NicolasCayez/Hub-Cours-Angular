@@ -1,0 +1,20 @@
+<div class="bg-primary-subtle vh-100 m-0 g-0">
+  <h1 class="ps-5 p-lg-3 fw-bold text-dark bg-warning-subtle">List Friends</h1>
+  <div class="container-fluid row">
+    <input type="text" name="" placeholder="du texte" class="w-50 ms-auto" [(ngModel)]="listFriendsTextInput">
+    <input type="button" value="valider" class="w-auto me-auto" (click)="onAddingFriends()">
+    <p *ngIf="listFriendsCreated;else noAmi" class="text-center">{{listFriendsCreationStatus}}</p>
+    <ng-template #noAmi>
+      <p class="text-center">T'a pas d'amis</p>
+    </ng-template>
+  </div>
+  <div class="container-fluid row">
+    <button [disabled]="listFriendsAuth" class="col-2 mx-auto mt-2">Clique avant 3 secondes</button>
+  </div>
+  <div class="container-fluid row row-cols-2 row-cols-xl-3">
+    <div *ngFor="oneFriend of myfriends; let i = index">
+      <app-one-friend class="card col mx-auto mt-5 p-5 bg-warning-subtle rounded-5"></app-one-friend>
+      index {{i}}
+    </div>
+  </div>
+</div>

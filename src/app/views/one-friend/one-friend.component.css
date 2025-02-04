@@ -1,3 +1,11 @@
 img {
   max-width: 70px;
 }
+
+.friendOn {
+  color: chartreuse;
+}
+
+.friendOff{
+  color: blue;
+}

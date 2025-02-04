@@ -1,5 +1,6 @@
-<div [ngStyle]="{'background-color': getColor()}">
-  <h1 class="fw-bold">{{oneFriendName}}</h1>
+<!-- <div [ngStyle]="{'background-color': getColor()}"> -->
+<div [ngStyle]="{backgroundColor: getColor()}">
+  <h1 class="fw-bold" [ngClass]="{friendOn:oneFrienStyle==='ON',friendOff:oneFrienStyle==='OFF'}">{{oneFriendName}}</h1>
   <hr>
   <p class="fw-bold fs-4">Status: <span class="fs-5 text-success">{{getOneFriendStatus()}}</span></p>
   <p class="fw-bold fs-4">Age: <span class="fs-5 text-dark-emphasis">{{oneFriendAge}}</span></p>
