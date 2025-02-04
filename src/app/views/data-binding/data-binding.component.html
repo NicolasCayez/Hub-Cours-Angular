@@ -1,6 +1,6 @@
 <div class="container row">
   <label for="userName">Nom utilisateur</label>
-  <input type="text" name="username" id="" placeholder="votre username" [(ngModel)]="userName">
-  <p>{{userName}}</p>
-  <button [disabled]="emptyUserName" (click)="resetInput()">Reset input</button>
+  <input type="text" name="username" id="" placeholder="votre username" [(ngModel)]="userName" class="w-auto ms-5" (input)="onUpdate($event)">
+  <p class="ms-5">{{userName}}</p>
+  <button [disabled]="emptyUserName" (click)="resetInput()" class="w-auto ms-5">Reset input</button>
 </div>

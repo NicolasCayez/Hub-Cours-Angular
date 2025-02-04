@@ -12,12 +12,15 @@ export class DataBindingComponent {
   emptyUserName: boolean = true;
 
   constructor(){
-    this.userName = "Votre userName";
-    this.userName == "" ? this.emptyUserName = true : this.emptyUserName = false;
+    this.userName = "";
   }
   
 
   resetInput():void {
     this.userName = "";
+  }
+
+  onUpdate(eventInput:Event): void {
+    this.userName == "" ? this.emptyUserName = true : this.emptyUserName = false;
   }
 }
