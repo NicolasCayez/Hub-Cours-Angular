@@ -19,13 +19,14 @@ interface Article {
   styleUrl: './user-control-center-add-article.component.css'
 })
 export class UserControlCenterAddArticleComponent {
+  newAuthor: string = "";
   newTitle: string = "";
   newContent: string = "";
   newArticle: Article = {
     id: 0,
     title: this.newTitle,
     content: this.newContent,
-    author: "Auteur atricle",
+    author: this.newAuthor,
     date: new Date(Date.now()), 
     type: 'article'
   }
@@ -33,7 +34,7 @@ export class UserControlCenterAddArticleComponent {
     id: 0,
     title: this.newTitle,
     content: this.newContent,
-    author: "Auteur brouillon",
+    author: this.newAuthor,
     date: new Date(Date.now()), 
     type: 'brouillon'
   }
@@ -41,13 +42,21 @@ export class UserControlCenterAddArticleComponent {
   @Output() brouillonCreated = new EventEmitter<Article>();
 
   addArticle() {
-    this.newArticle.title = this.newTitle
-    this.newArticle.content = this.newContent
+    this.newArticle.author = this.newAuthor;
+    this.newArticle.title = this.newTitle;
+    this.newArticle.content = this.newContent;
     this.articleCreated.emit(this.newArticle);
+    this.newAuthor = "";
+    this.newTitle = "";
+    this.newContent = "";
   }
   addBrouillon() {
-    this.newBrouillon.title = this.newTitle
-    this.newBrouillon.content = this.newContent
+    this.newArticle.author = this.newAuthor;
+    this.newBrouillon.title = this.newTitle;
+    this.newBrouillon.content = this.newContent;
     this.brouillonCreated.emit(this.newBrouillon);
+    this.newAuthor = "";
+    this.newTitle = "";
+    this.newContent = "";
   }
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OneFriendComponent } from '../one-friend/one-friend.component';
 
+
 @Component({
   selector: 'app-list-friends-event-binding',
   imports: [OneFriendComponent],
