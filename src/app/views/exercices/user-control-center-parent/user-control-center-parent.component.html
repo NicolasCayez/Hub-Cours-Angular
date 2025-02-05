@@ -4,6 +4,6 @@
   <app-user-control-center-add-article  class="card bg-danger-subtle p-3" (articleCreated)="onArticleAdded($event)" (brouillonCreated)="onBrouillonAdded($event)"></app-user-control-center-add-article>
   <div class="mt-4 p-3 row row-cols-3">
     <!-- Les articles -->
-    <app-user-control-center-child class="pe-2" *ngFor="let article of articles; let i = index" [article]="article"></app-user-control-center-child>
+    <app-user-control-center-child class="pe-0 pt-2" *ngFor="let article of articles; let i = index" [article]="article"></app-user-control-center-child>
   </div>
 </div>

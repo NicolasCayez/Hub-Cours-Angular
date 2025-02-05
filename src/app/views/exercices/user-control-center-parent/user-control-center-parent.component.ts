@@ -2,18 +2,18 @@ import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { UserControlCenterChildComponent } from "../user-control-center-child/user-control-center-child.component";
 import { UserControlCenterAddArticleComponent } from '../user-control-center-add-article/user-control-center-add-article.component';
-import { Title } from '@angular/platform-browser';
+import { Article } from '../../../models/article.model';
 
 
 // Interface pour typer les articles
-interface Article {
-  id: number;
-  title: string;
-  content: string;
-  author: string;
-  date: Date;
-  type: string;
-}
+// interface Article {
+//   id: number;
+//   title: string;
+//   content: string;
+//   author: string;
+//   date: Date;
+//   type: string;
+// }
 
 @Component({
   selector: 'app-user-control-center',

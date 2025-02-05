@@ -1,14 +1,15 @@
 import { Component, Input } from '@angular/core';
+import { Article } from '../../../models/article.model';
 
 // Interface pour typer les articles
-interface Article {
-  id: number;
-  title: string;
-  content: string;
-  author: string;
-  date: Date;
-  type: string;
-}
+// interface Article {
+//   id: number;
+//   title: string;
+//   content: string;
+//   author: string;
+//   date: Date;
+//   type: string;
+// }
 
 @Component({
   selector: 'app-user-control-center-child',

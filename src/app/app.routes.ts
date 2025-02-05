@@ -10,6 +10,7 @@ import { DirectiveNgifComponent } from './views/exercices/directive-ngif/directi
 import { DirectiveNgforComponent } from './views/exercices/directive-ngfor/directive-ngfor.component';
 import { ParentComponent } from './views/lessons/parent/parent.component';
 import { UserControlCenterParentComponent } from './views/exercices/user-control-center-parent/user-control-center-parent.component';
+import { UserInfoParentComponent } from './views/exercices/user-info-parent/user-info-parent.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -25,6 +26,7 @@ export const routes: Routes = [
   { path: 'directive-ngfor', component: DirectiveNgforComponent},
   { path: 'parent', component: ParentComponent},
   { path: 'user-control-center', component: UserControlCenterParentComponent},
+  { path: 'user-info', component: UserInfoParentComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},

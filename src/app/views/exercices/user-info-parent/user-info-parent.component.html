@@ -1,0 +1,7 @@
+<div class="container-fluid bg-success-subtle py-4">
+  <h1 class="text-center">User Info</h1>
+  <!-- Infos -->
+  <app-user-info-child class="card bg-primary-subtle p-3 mb-2" [name]="name" [info]="info"></app-user-info-child>
+  <!-- Editor -->
+  <app-user-info-editor class="card bg-warning-subtle p-3" (infoUpdated)="onInfoUpdated($event)"></app-user-info-editor>
+</div>
