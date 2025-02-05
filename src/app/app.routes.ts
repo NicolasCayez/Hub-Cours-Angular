@@ -9,6 +9,7 @@ import { DataBindingComponent } from './views/data-binding/data-binding.componen
 import { DirectiveNgifComponent } from './views/directive-ngif/directive-ngif.component';
 import { DirectiveNgforComponent } from './views/directive-ngfor/directive-ngfor.component';
 import { ParentComponent } from './views/parent/parent.component';
+import { UserControlCenterParentComponent } from './views/user-control-center-parent/user-control-center-parent.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -23,6 +24,7 @@ export const routes: Routes = [
   { path: 'directive-ngif', component: DirectiveNgifComponent},
   { path: 'directive-ngfor', component: DirectiveNgforComponent},
   { path: 'parent', component: ParentComponent},
+  { path: 'user-control-center', component: UserControlCenterParentComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},

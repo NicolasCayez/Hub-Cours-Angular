@@ -1,0 +1,9 @@
+<h2>Add-Article</h2>
+<label class="mt-2">Titre article</label>
+<input type="text" placeholder="Le titre" [(ngModel)]="newTitle">
+<label class="mt-2">Contenu article</label>
+<input type="text" placeholder="Le contenu" [(ngModel)]="newContent">
+<div class="mt-2">
+  <button class="btn btn-dark" (click)="addArticle()"> Ajouter Article</button>
+  <button class="btn btn-outline-dark ms-1" (click)="addBrouillon()"> Ajouter Brouillon</button>
+</div>

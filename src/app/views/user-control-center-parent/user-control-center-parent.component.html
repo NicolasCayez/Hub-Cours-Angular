@@ -1,0 +1,9 @@
+<div class="container-fluid bg-primary-subtle py-4">
+  <h1 class="text-center">User Control Center</h1>
+  <!-- Add-Article -->
+  <app-user-control-center-add-article  class="card bg-danger-subtle p-3" (articleCreated)="onArticleAdded($event)" (brouillonCreated)="onBrouillonAdded($event)"></app-user-control-center-add-article>
+  <div class="mt-4">
+    <!-- Les articles -->
+    <app-user-control-center-child class="card bg-warning-subtle p-3 mb-2" *ngFor="let article of articles; let i = index" [article]="article"></app-user-control-center-child>
+  </div>
+</div>
