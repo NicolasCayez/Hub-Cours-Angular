@@ -11,6 +11,9 @@ import { DirectiveNgforComponent } from './views/exercices/directive-ngfor/direc
 import { ParentComponent } from './views/lessons/parent/parent.component';
 import { UserControlCenterParentComponent } from './views/exercices/user-control-center-parent/user-control-center-parent.component';
 import { UserInfoParentComponent } from './views/exercices/user-info-parent/user-info-parent.component';
+import { PipesComponent } from './views/lessons/pipes/pipes.component';
+import { ObservablesComponent } from './views/lessons/observables/observables.component';
+import { SignalsComponent } from './views/lessons/signals/signals.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -27,6 +30,9 @@ export const routes: Routes = [
   { path: 'parent', component: ParentComponent},
   { path: 'user-control-center', component: UserControlCenterParentComponent},
   { path: 'user-info', component: UserInfoParentComponent},
+  { path: 'pipes', component: PipesComponent},
+  { path: 'observables', component: ObservablesComponent},
+  { path: 'signals', component: SignalsComponent},
   
   // Root redirection (login or home, ...)
   { path: '', redirectTo: '/home', pathMatch: 'full'},

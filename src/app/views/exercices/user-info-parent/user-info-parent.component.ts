@@ -9,8 +9,8 @@ import { UserInfoEditorComponent } from "../user-info-editor/user-info-editor.co
   styleUrl: './user-info-parent.component.css'
 })
 export class UserInfoParentComponent {
-  name: string = "";
-  info: string = "";
+  name: string = "Brigitte";
+  info: string = "Comptablme";
 
   onInfoUpdated(data:{name:string;info:string}) {
     this.name = data.name;
